@@ -6,15 +6,34 @@ html, body {
   width:100%;
   height:100%;
 }
+@-webkit-keyframes test {
+  0% {
+    background-image: url('http://host2post.com/server13/photos/75aDv126njmuqM~/wedding-bride-blur-bridal-bouquet-close-hd-love-wallpaper.jpg');
+  }
+  50% {
+    background-image: url('http://suziqueuephotography.files.wordpress.com/2012/07/img_0686.jpg');
+  }
+  100% {
+    background-image: url('http://xdesigns.net/wp-content/uploads/2013/07/2-grass-wallpaper.jpg');
+  }
+
+}
 
 body {
   overflow-x:hidden;
   
   background:url("http://host2post.com/server13/photos/75aDv126njmuqM~/wedding-bride-blur-bridal-bouquet-close-hd-love-wallpaper.jpg") center center fixed;
   background-size:cover;
+  background-repeat: none;
   -webkit-background-size:cover;
   -moz-background-size:cover;
   -o-background-size:cover;
+   -webkit-animation-name: test;
+  -webkit-animation-duration: 40s;
+  -webkit-animation-iteration-count: 10;
+ /* -webkit-animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+  transition: all 20s ease;*/
 }
 
 nav {
@@ -72,3 +91,4 @@ nav ul li a {
 nav ul li a:hover {
   border-bottom:2px solid #333;
 }
+
